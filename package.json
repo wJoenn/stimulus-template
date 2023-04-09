@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@hotwired/stimulus": "^3.2.1",
+    "sass": "^1.61.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html"
+  }
+}
