@@ -7,7 +7,7 @@ Once done you can
 - Clone the repo: `git clone git@github.com:wJoenn/stimulus-boilerplate.git <YOUR_PROJECT_NAME>`
 - Navigate to the new directory: `cd <YOUR_PROJECT_NAME>`
 - Install all the yarn dependencies: `yarn`
-- Launch the develpment server: `yarn dev`
+- Launch the development server: `yarn dev`
 
 ## Deploy as Github pages
 **First time**
