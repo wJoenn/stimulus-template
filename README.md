@@ -1,7 +1,9 @@
 This is a boilerplate for a Frontend project using Stimulus and SCSS
 
 ## Installation
+Fork the repository
 
+Once done you can
 - Clone the repo: `git clone git@github.com:wJoenn/stimulus-boilerplate.git <YOUR_PROJECT_NAME>`
 - Navigate to the new directory: `cd <YOUR_PROJECT_NAME>`
 - Install all the yarn dependencies: `yarn`
