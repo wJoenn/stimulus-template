@@ -31,11 +31,9 @@ Now if you go in your repository settings, under "Pages" you should see your gh 
   cd <YOUR_PROJECT_NAME>
   yarn build
   cd dist # Again, update the index.html if you're not using a custom domain name
-  git checkout master
   git add .
   git commit -m "<YOUR_COMMIT_MESSAGE>"
   git checkout gh-pages
-  git merge master
   git push -u <YOUR_PROJECT_NAME> gh-pages
 ```
   
