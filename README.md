@@ -10,30 +10,20 @@ This is a boilerplate for a Frontend project using Stimulus and SCSS
 - Launch the development server: `yarn dev`
 
 ## Deploy as Github pages
-**First time**
+Simply move the `deploy.yml` inside a new `.github/workflows` and your project will now be build and deployed everytime you push to `master` or `main`.
 
-- Create dist folder with minimised files: `yarn build`
-- Navigate to the new folder: `cd dist`
-- Create new Git repository: `git init`
-  
-If you use your own domain name you can skip this step, otherwise you'll need to go to your dist/html.index file and update all of your `src` and `<link href="">` to be `/<YOUR_PROJECT_NAME>/<PATH_TO_FILE>` instead of just `/<PATH_TO_FILE>`.<br/>For example your `<script src="/index.js" defer="">` would become `<script src="/portfolio/index.js" defer="">`
+**Sidenote**
+If your gh page does not use a custom domain it is likely that your url will looks something like this :
 
-- Add your dist directory to git: `git add .`
-- Commit Your changes: `git commit -m "Initial Commit"`
-- Create and move to a new gh-pages branch: `git checkout -b gh-pages`
-- Create a remote branch to link your dist to your main repo: `git remote add <YOUR_PROJECT_NAME> <YOUR_REPO_SSH_KEY>`
-- Push your gh-pages to your main repo: `git push -u <YOUR_PROJECT_NAME> gh-pages`
+>> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>
 
-Now if you go in your repository settings, under "Pages" you should see your gh page is processing
+Every relative path url that you used inside your project such as `<img src="path/to/image">` will be relative to the root url so it would search that image in
 
-**To update simple do**
-```
-  cd <YOUR_PROJECT_NAME>
-  yarn build
-  cd dist # Again, update the index.html if you're not using a custom domain name
-  git checkout gh-pages
-  git add .
-  git commit -m "<YOUR_COMMIT_MESSAGE>"
-  git push -u <YOUR_PROJECT_NAME> gh-pages
-```
-  
+>> https://<YOUR_GITHUB_NAME>.github.io/path/to/image
+
+instead of
+
+>> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>/path/to/image
+
+To fix that you can change the relative path in your code to include <YOUR_PROJECT_NAME> before build
+Having a custom domain for your gh page will also fix the issue as the custom domain's url will start at the root.
