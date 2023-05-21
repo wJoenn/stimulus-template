@@ -15,15 +15,15 @@ Simply move the `deploy.yml` inside a new `.github/workflows` and your project w
 **Sidenote**
 If your gh page does not use a custom domain it is likely that your url will looks something like this :
 
->> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>
+> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>
 
 Every relative path url that you used inside your project such as `<img src="path/to/image">` will be relative to the root url so it would search that image in
 
->> https://<YOUR_GITHUB_NAME>.github.io/path/to/image
+> https://<YOUR_GITHUB_NAME>.github.io/path/to/image
 
 instead of
 
->> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>/path/to/image
+> https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>/path/to/image
 
 To fix that you can change the relative path in your code to include <YOUR_PROJECT_NAME> before build
 Having a custom domain for your gh page will also fix the issue as the custom domain's url will start at the root.
