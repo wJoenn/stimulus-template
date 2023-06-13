@@ -10,9 +10,15 @@ This is a boilerplate for a Frontend project using Stimulus and SCSS
 - Launch the development server: `yarn dev`
 
 ## Deploy as Github pages
-Simply move the `deploy.yml` inside a new `.github/workflows` and your project will now be build and deployed everytime you push to `master` or `main`.
+- Create a .github/workflows directory inside your root folder<br>
+- Move the deploy.yml file to .github/workflows/deploy.yml<br>
+- Commit & Push to your github repository
 
-**Sidenote**
+Your project will now be bundled and deployed everytime you push to `master` or `main`.
+
+<br>
+
+### **Sidenote**
 If your gh page does not use a custom domain it is likely that your url will looks something like this :
 
 > https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>
@@ -25,5 +31,6 @@ instead of
 
 > https://<YOUR_GITHUB_NAME>.github.io/<YOUR_PROJECT_NAME>/path/to/image
 
-To fix that you can change the relative path in your code to include <YOUR_PROJECT_NAME> before build
+To fix that you can change the relative path in your code to include <YOUR_PROJECT_NAME> before build<br>
+The best solution I can think of at the moment would be to have a .env file for your dev environment to store your dev path and a .env file for production where you store your dev path<br><br>
 Having a custom domain for your gh page will also fix the issue as the custom domain's url will start at the root.
