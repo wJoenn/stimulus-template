@@ -10,14 +10,13 @@
     "sourceType": "module"
   },
   "ignorePatterns": [
-    "dist",
-    "application.js",
-    "index.js"
+    "dist"
   ],
   "rules": {
     "arrow-parens": "off",
     "class-methods-use-this": "off",
     "comma-dangle": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "no-param-reassign": "off",
     "no-plusplus": "off",
     "prefer-destructuring": "off",
