@@ -1,4 +1,4 @@
-This is a boilerplate for a Frontend project using Stimulus and SCSS
+This is a boilerplate for a Frontend project using Stimulus, Sass and Tailwind
 
 ## Installation
 - Click on Use this template > Create a new repository
