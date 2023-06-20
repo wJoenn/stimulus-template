@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <link rel="stylesheet" href="/src/stylesheets/application.scss">
+      <script type="module" src="/src/javascript/application.js" defer></script>
+    </head>
+  <body id="welcome">
+    <section id="stimulus">
+      <div class="content">
+        <a href="https://stimulus.hotwired.dev/" target="_blank" class="logo">
+          <img src="./src/images/logos/stimulus.png" alt="Stimulus logo">
+        </a>
+
+        <div>
+          <h1>Welcome !</h1>
+          <p>Let's get you started on a new project with <a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a>, a JavaScript framework by Hotwire. You'll find all of your controllers inside the <code>javascript/controllers</code> directory.</p>
+        </div>
+      </div>
+
+      <button class="test" data-controller="count" data-action="click->count#increment">Click me</button>
+    </section>
+
+    <section id="tools">
+      <ul>
+        <li class="postcss">
+          <a href="https://postcss.org/" target="_blank" class="logo">
+            <img src="./src/images/logos/postcss.png" alt="Postcss logo">
+          </a>
+
+          <div>
+            <h2>Postcss</h2>
+            <p>A tool for transforming CSS with JavaScript. It is configured with <span>Autoprefixer</span>, a plugin to ensure cross browser compatibility, and <span>Purgecss</span>, a plugin that removes unused CSS from your project. Postcss' configuration can be found in <code>postcss.config.js</code></p>
+          </div>
+        </li>
+
+        <li class="sass">
+          <a href="https://sass-lang.com/" target="_blank" class="logo">
+            <img src="./src/images/logos/sass.png" alt="Sass logo">
+          </a>
+
+          <div>
+            <h2>Sass</h2>
+            <p>A powerful CSS preprocessor that extends the capabilities of traditional CSS with features like variables, nesting, mixins, and more, making it easier to write and maintain complex stylesheets for web development projects.</p>
+          </div>
+        </li>
+
+        <li class="tailwindcss">
+          <a href="https://tailwindcss.com/" target="blank" class="logo">
+            <img src="./src/images/logos/tailwindcss.png" alt="Tailwindcss logo">
+          </a>
+
+          <div>
+            <h2>Tailwindcss</h2>
+            <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. Tailwindcss' configuration can be fond in <code>tailwind.config.js</code></p>
+          </div>
+        </li>
+
+        <li class="vite">
+          <a href="https://vitejs.dev/" target="_blank" class="logo vite">
+            <img src="./src/images/logos/vite.png" alt="Vite logo">
+          </a>
+
+          <div>
+            <h2>Vite</h2>
+            <p>A lightning-fast JavaScript bundler and development server that leverages ES modules to achieve near-instantaneous development server startup and hot module replacement. Vite's configuration can be found in <code>vite.config.js</code></p>
+          </div>
+        </li>
+
+        <li class="deploy">
+          <a href="https://pages.github.com/" class="logo">
+            <img src="./src/images/logos/github.png" alt="Github logo">
+          </a>
+
+          <div>
+            <h2>Deployment</h2>
+            <p>Automatically deploy your website on <span>Github</span> with the help of the <code>deploy.yml</code> github action, all the instructions you need are available in the <code>README.md</code>. Consider using <a href="https://www.netlify.com/" target="_blank">Netlify</a> if your deployment needs to not comply with Github's limitations.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
