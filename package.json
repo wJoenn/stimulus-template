@@ -2,6 +2,12 @@
   "name": "app",
   "private": "true",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext .js,.cjs,.mjs --max-warnings=0",
+    "upint": "yarn upgrade-interactive --latest"
+  },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1"
   },
@@ -15,10 +21,5 @@
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9",
     "vite-plugin-stimulus-hmr": "^3.0.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext .js,.cjs,.mjs --max-warnings=0"
   }
 }

@@ -7,7 +7,7 @@ export default {
     autoprefixer,
     tailwindcss,
     purgecss({
-      content: ["./*.html"]
+      content: ["./**/index.html"]
     })
   ]
 }
