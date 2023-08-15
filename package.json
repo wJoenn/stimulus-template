@@ -9,17 +9,17 @@
     "upint": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.1"
+    "@hotwired/stimulus": "^3.2.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.46.0",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.0",
-    "sass": "^1.64.2",
+    "sass": "^1.65.1",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.8",
+    "vite": "^4.4.9",
     "vite-plugin-stimulus-hmr": "^3.0.0"
   }
 }
