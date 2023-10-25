@@ -2,6 +2,11 @@
   "name": "app",
   "private": "true",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext .js,.cjs,.mjs --max-warnings=0"
+  },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2"
   },
@@ -15,10 +20,5 @@
     "tailwindcss": "^3.3.4",
     "vite": "^4.5.0",
     "vite-plugin-stimulus-hmr": "^3.0.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext .js,.cjs,.mjs --max-warnings=0"
   }
 }
