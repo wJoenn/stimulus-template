@@ -11,20 +11,23 @@
     "ecmaVersion": "latest"
   },
   "ignorePatterns": [
-    "dist"
+    "dist",
+    "node_modules"
   ],
   "rules": {
     "arrow-parens": "off",
     "class-methods-use-this": "off",
     "comma-dangle": "off",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "max-len": ["error", 120],
     "no-param-reassign": "off",
     "no-plusplus": "off",
     "no-use-before-define": "off",
-    "prefer-destructuring": "off",
     "object-curly-newline": "off",
     "quotes": ["error", "double"],
-    "semi": ["error", "never"]
+    "quote-props": ["error", "consistent-as-needed"],
+    "semi": ["error", "never"],
+
+    "import/extensions": ["error", "ignorePackages"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }
 }
