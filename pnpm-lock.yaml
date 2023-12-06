@@ -12,10 +12,10 @@ dependencies:
 devDependencies:
   '@fullhuman/postcss-purgecss':
     specifier: ^5.0.0
-    version: 5.0.0(postcss@8.4.31)
+    version: 5.0.0(postcss@8.4.32)
   autoprefixer:
     specifier: ^10.4.16
-    version: 10.4.16(postcss@8.4.31)
+    version: 10.4.16(postcss@8.4.32)
   eslint:
     specifier: ^8.55.0
     version: 8.55.0
@@ -29,8 +29,8 @@ devDependencies:
     specifier: ^3.3.5
     version: 3.3.5
   vite:
-    specifier: ^5.0.5
-    version: 5.0.5(sass@1.69.5)
+    specifier: ^5.0.6
+    version: 5.0.6(sass@1.69.5)
   vite-plugin-stimulus-hmr:
     specifier: ^3.0.0
     version: 3.0.0
@@ -282,12 +282,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fullhuman/postcss-purgecss@5.0.0(postcss@8.4.31):
+  /@fullhuman/postcss-purgecss@5.0.0(postcss@8.4.32):
     resolution: {integrity: sha512-onDS/b/2pMRzqSoj4qOs2tYFmOpaspjTAgvACIHMPiicu1ptajiBruTrjBzTKdxWdX0ldaBb7wj8nEaTLyFkJw==}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
       purgecss: 5.0.0
     dev: true
 
@@ -587,7 +587,7 @@ packages:
       is-shared-array-buffer: 1.0.2
     dev: true
 
-  /autoprefixer@10.4.16(postcss@8.4.31):
+  /autoprefixer@10.4.16(postcss@8.4.32):
     resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -599,7 +599,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -1677,12 +1677,6 @@ packages:
       thenify-all: 1.6.0
     dev: true
 
-  /nanoid@3.3.6:
-    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1905,7 +1899,7 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
@@ -2335,8 +2329,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite@5.0.5(sass@1.69.5):
-    resolution: {integrity: sha512-OekeWqR9Ls56f3zd4CaxzbbS11gqYkEiBtnWFFgYR2WV8oPJRRKq0mpskYy/XaoCL3L7VINDhqqOMNDiYdGvGg==}
+  /vite@5.0.6(sass@1.69.5):
+    resolution: {integrity: sha512-MD3joyAEBtV7QZPl2JVVUai6zHms3YOmLR+BpMzLlX2Yzjfcc4gTgNi09d/Rua3F4EtC8zdwPU8eQYyib4vVMQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
